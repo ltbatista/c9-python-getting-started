@@ -4,12 +4,24 @@
 # print the message
 print('Why won't this line of code print')
 
+# answer
+# mudando para aspas duplas
+print("Why won't this line of code print")
+
+
 # print the message
 prnit('This line fails too!')
+# answer
+print('This line fails too!')
 
 # print the message
 print "I think I know how to fix this one"
+# answer
+print("I think I know how to fix this one")
 
 # print the name entered by the user
 input('Please tell me your name: ')
+print(name)
+# answer 
+name = input('Please tell me your name: ')
 print(name)
