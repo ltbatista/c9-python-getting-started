@@ -12,3 +12,18 @@
 # Charlie should be in room C
 # Khalid Haque should be in room OTHER
 # Xin Zhao should be in room Z
+
+name = input('Input your first name: ')
+
+flname = name[0:1]
+
+if flname.upper() == 'A' or flname.upper() == 'B':
+    print('Please, go to AB room.')
+elif flname.upper() == 'C':
+    print('Please, go to CD room.') 
+else: 
+    lname = input('Please, input your last name: ')
+    if lname[0:1].upper() == 'Z':
+        print('Please, go to Z room.')
+    else:
+        print('Please, go to the OTHER room.') 
