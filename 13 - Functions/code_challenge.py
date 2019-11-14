@@ -15,3 +15,22 @@
 # BONUS: Test your function with the values 6, 4 and divide 
 # Have your function return an error message when invalid values are received
 
+def calculator(fnumber, snumber, op):
+    if op == 'add':
+        result = fnumber + snumber
+    elif op == 'subtract':
+        result =  fnumber - snumber
+    elif op == 'divide':
+        if snumber != 0:
+            result =  fnumber / snumber
+        else:
+            result = 'ERROR: invalid valor, zero.'
+    else:
+        result = 'Incorrect operator'
+    return result
+
+a = int(input('Input the first number: '))
+b = int(input('Input the second number: '))
+op = input('Input the operator (add/subtract/divide): ')
+
+print(calculator(a, b, op))
