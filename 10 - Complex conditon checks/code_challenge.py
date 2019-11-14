@@ -22,3 +22,15 @@
 # output: R. Ibach
 # first name: ReallyLongFirstName  last name: ReallyLongLastName
 # output: ReallyLongLastName
+
+fname = input('Input your first name: ')
+lname = input('Input your last name: ')
+
+if len(fname) < 10 and len(lname) < 10:
+    print('{} {}'.format(fname, lname))
+elif len(fname) >= 10 and len(lname) < 10:
+    print('{}. {}'.format(fname[0:1],lname))
+elif len(fname) < 10 and len(lname) >= 10:
+    print('{} {}.'.format(fname,lname[0:1]))
+else:
+    print(lname)
